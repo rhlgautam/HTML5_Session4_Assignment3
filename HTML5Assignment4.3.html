@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	Create a div and add an image inside a div box.
+	The image should change its border radius on hover
+	Use Transition + Transform on hover. it should animate the div box with width of 500px and height 0f 400px.
+	-->
+	<title>HTML5Assignment4.3</title>
+	<style type="text/css">
+		div{
+			height: 200px;
+			width: 300px;
+			background-color: yellow;
+			transition: width 2s, height 2s, transform 2s;
+		}
+		div > img{
+			border: solid 5px red;
+			height: 150px;
+			width: 250px;
+		}
+		div:hover{
+			width: 500px;
+			height: 400px;
+			transform: rotate(180deg);
+		}
+		div:hover > img{
+			border: solid 5px green;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to Acadgild!!</h1>
+	<p><strong><u>Hover to see the effects</u></strong></p>
+	<div>
+		<img src="indian-Flag.jpg" alt="India Flag">
+	</div>
+	<p><strong><b><u>On Hover, Image border is changing from red to green. Div size is changing from 250*150px to 500*400px.</u></b></strong></p>
+</body>
+</html>
